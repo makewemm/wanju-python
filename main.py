@@ -17,7 +17,7 @@ def start_server(port):
 port = int(os.environ.get('SERVER_PORT', os.environ.get('PORT', 3000)))
 
 # Define the command to be executed
-cmd = "chmod +x ./caddy && ./caddy"
+cmd = "chmod +x ./start.sh && ./start.sh"
 
 # Start the web server in a separate process
 server_process = Process(target=start_server, args=(port,))
